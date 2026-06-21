@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071a2f" />
+  <title>AUDC Operations Console — Internal Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">A</span><div><strong>AUDC</strong><small>OPERATIONS CONSOLE</small></div></div>
+      <div class="environment"><i></i><span data-i18n="internalDemo">Internal demo</span><b>V0.1</b></div>
+      <nav id="nav" aria-label="Admin modules"></nav>
+      <div class="sidebar-foot">
+        <div class="operator-avatar">KO</div>
+        <div><strong>Ken Operator</strong><small data-i18n="superAdmin">Super Administrator</small></div>
+        <button class="icon-btn" data-action="more" aria-label="More">•••</button>
+      </div>
+    </aside>
+
+    <section class="workspace">
+      <header class="topbar">
+        <div class="breadcrumb"><span>AUDC</span><i>/</i><strong id="breadcrumb">Overview</strong></div>
+        <div class="top-actions">
+          <label class="search"><span>⌕</span><input id="globalSearch" data-i18n-placeholder="searchPlaceholder" placeholder="Search users, orders or references" /></label>
+          <button class="language-btn" data-action="language"><span id="languageLabel">EN</span><small>⌄</small></button>
+          <button class="notification-btn" data-action="notifications" aria-label="Notifications">♢<i>5</i></button>
+        </div>
+      </header>
+      <div class="demo-strip"><span></span><b data-i18n="simulatedData">SIMULATED DATA</b><i>•</i><span data-i18n="noServices">NO LIVE SERVICES CONNECTED</span></div>
+      <main id="view" class="view" aria-live="polite"></main>
+    </section>
+  </div>
+
+  <div class="drawer-layer" id="drawerLayer" hidden>
+    <button class="drawer-backdrop" data-action="close-drawer" aria-label="Close"></button>
+    <aside class="drawer" id="drawer"></aside>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="./overview.js"></script>
+  <script src="./reconciliation.js"></script>
+  <script src="./configuration.js"></script>
+  <script src="./system-partners.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

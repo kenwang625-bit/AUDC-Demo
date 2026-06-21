@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#071a2f" />
+  <title>AUDC Wealth — Product Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="demo-shell">
+    <aside class="review-panel" aria-label="Demo notes">
+      <div class="review-brand"><span class="brand-mark">A</span><span>AUDC Product Demo</span></div>
+      <h1>One account.<br />From yield to life.</h1>
+      <p>A clickable internal prototype for the AUDD, RWA and U-Card product loop.</p>
+      <div class="review-list">
+        <div><span>01</span><p>Explore tokenised real-world assets</p></div>
+        <div><span>02</span><p>Invest and settle proceeds in AUDD</p></div>
+        <div><span>03</span><p>Transfer, remit or fund U-Card</p></div>
+      </div>
+      <div class="review-note">Demo data only · No live services connected</div>
+    </aside>
+
+    <main class="phone-wrap">
+      <div class="phone" id="app">
+        <div class="status-bar" aria-hidden="true">
+          <span id="clock">9:41</span>
+          <span class="status-icons">● ᴡɪꜰɪ ▰</span>
+        </div>
+
+        <header class="app-header">
+          <button class="logo-button" data-action="go-home" aria-label="Go to home"><span class="brand-mark small">A</span></button>
+          <div class="header-copy"><span>WORKING PRODUCT</span><strong id="pageTitle">Overview</strong></div>
+          <div class="header-actions">
+            <button class="language-button" data-action="language" aria-label="Select language"><span id="languageCode">EN</span></button>
+            <button class="icon-button notification-button" data-action="notifications" aria-label="Notifications"><span data-icon="bell"></span><i></i></button>
+          </div>
+        </header>
+
+        <div class="demo-ribbon"><span></span> INTERACTIVE DEMO · SIMULATED DATA</div>
+        <section class="app-content" id="view" aria-live="polite"></section>
+
+        <nav class="bottom-nav" aria-label="Primary navigation">
+          <button class="nav-item active" data-tab="home"><span data-icon="home"></span><small>Home</small></button>
+          <button class="nav-item" data-tab="rwa"><span data-icon="chart"></span><small>RWA</small></button>
+          <button class="nav-item" data-tab="account"><span data-icon="wallet"></span><small>Account</small></button>
+          <button class="nav-item" data-tab="card"><span data-icon="card"></span><small>U-Card</small></button>
+          <button class="nav-item" data-tab="profile"><span data-icon="user"></span><small>Profile</small></button>
+        </nav>
+
+        <div class="modal-layer" id="modalLayer" hidden>
+          <button class="modal-backdrop" data-action="close-modal" aria-label="Close dialog"></button>
+          <section class="sheet" id="sheet" role="dialog" aria-modal="true"></section>
+        </div>
+        <div class="toast" id="toast" role="status"></div>
+
+        <section class="registration-layer" id="registrationLayer" aria-live="polite" hidden></section>
+      </div>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
